@@ -56,7 +56,7 @@ const InterviewList = () => {
                       <CardDescription>{item.description}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p>{item.experience}</p>
+                      <p>{item.experience} {item.experience > 1 ? 'years' : "year"}</p>
                     </CardContent>
                     <CardFooter>
                       <p>{(item.createdAt).toDateString()}</p>
